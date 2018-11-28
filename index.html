@@ -8,32 +8,41 @@
 
 <body>
   <div class="header">
-    <div><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/BuzzFeed.svg/1280px-BuzzFeed.svg.png"></div>
-    <div>News</div>
-    <div>Videos</div>
-    <div>Quizes</div>
-    <div>Tasty</div>
-    <input placeholder="Search">
+    <div><img class="logo" src="https://avatars2.githubusercontent.com/u/29447547?s=460&v=4"></div>
   </div>
-  </div>
-  <h1>Which Tech Company is the Perfect Fit for You?</h1>
-  <p id="caption">With dedication, you'll be there before you know it. </p>
-  <img id="tomImg" src="http://th.downloadblog.it/jSwEBLI80OIF2oYywP73GVj3zCo=/fit-in/655xorig/http%3A%2F%2Fmedia.downloadblog.it%2F5%2F57d%2Ftom-di-myspace.jpg">
-  <a href="https://en.wikipedia.org/wiki/Tom_Anderson">Tom Anderson</a>
-  <div id="tom">Buzzfeed Contributor</div>
-  <img class="siliconValley" src="https://www.hbo.com/content/dam/hbodata/series/silicon-valley/episodes/s3/silicon-valley-3-3000x1688.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg">
+  <h1>Are you a hero or a villain?</h1>
+  <p id="caption">Without dedication, you'll be there before you know it. </p>
+  <img id="tomImg" src="https://avatars2.githubusercontent.com/u/29447547?s=460&v=4">
+  <a href="https://github.com/Playerian">Playerian</a>
+  <div id="tom">Student</div>
+  <img class="siliconValley" src="https://avatars2.githubusercontent.com/u/29447547?s=460&v=4">
   <div class="questions">
     <h2>Let's start with your Name</h2>
-    <input id="name" placeholder="Enter Your Name Here">
-    <h2> Would you rather spend the day reading, coding, playing a sport or designing clothing?</h2>
-    <input id="question1" placeholder="Reading, Coding, Sports, Designing">
-    <h2> Which would you rather disappear from earh forever: Waffles, Pancakes, or French Toast?</h2>
-    <input id="question2" placeholder="Pancakes, Waffles, or French Toast">
-    <h2>What is your spirit animal?</h2>
+    <input id="name" placeholder="Mine is a Duck">
+    <h2> A person is being bullied by your friends in school, would you stop your friends from bullying the person?</h2>
+    <input class="ranger" type="range" min="0" max="5" value='0'  id="question1" placeholder="Like, never?">
+    <h2> How often would you help a friend in classroom?</h2>
+    <input class="ranger" type="range" min="0" max="5" value='0' id="question2" placeholder="Like, never?">
+    <h2>What is your zodiac sign?</h2>
     <input id="question3" placeholder="Mine is a Duck">
+    <h2>What is your favorite hero?(Anything is welcome)</h2>
+    <input id="question4" placeholder="Mine is a Duck">
+    <h2>If you can become an animal other than human afterlife, what it will be?</h2>
+    <input id="question5" placeholder="Mine is a Duck">
+    <h2>What kind of job would you like to do for a lifetime?</h2>
+    <input id="question6" placeholder="Mine is a Duck">
+    <h2>In a scale of 0 to 5, how much do you love your family?</h2>
+    <input class="ranger" type="range" step = "1" min="0" max="5" value='0' id="question7" placeholder="Mine is a Duck">
+    <h2>What is your favorite word within 5 letters?</h2>
+    <input id="question8" placeholder="Mine is a Duck">
+    <h2>Describe a story that you will never forget, long story short.</h2>
+    <input id="question9" placeholder="Mine is a Duck">
+    <h2>Do you like anime?</h2>
+    <input class="ranger" type="range" step = "1" min="0" max="1" value='0' id="question10" placeholder="Mine is a Duck">
   </div>
   <div class="result">
-    <button>Click here to land your dream job!</button>
+    <button class='button'>Click here to get the result!</button>
+    <div id="result"></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src='js/script.js'></script>
