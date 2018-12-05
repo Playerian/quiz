@@ -22,16 +22,16 @@ $("button").click(function() {
     let $image = $("<img>").addClass('Rimage');
     let $text = $('<div>')
     $text.addClass('Rtext');
-    if (totalScore > 40){
+    if (totalScore > 32){
         $text.text("You are superman! You have a loving heart and strong feeling towards people! Hope you have a good future!");
         $image.attr("src", 'https://www.sideshowtoy.com/assets/products/903305-super-powers-superman/lg/dc-comics-superman-maquette-tweeterhead-903305-07.jpg');
-    }else if (totalScore > 30){
+    }else if (totalScore > 24){
         $text.text("You are flash! You have a gender feeling towards people and you have a kind heart!");
         $image.attr("src", 'https://www.sideshowtoy.com/wp-content/uploads/2017/11/dc-comics-justice-league-the-flash-sixth-scale-hot-toys-feature-903122.jpg');
-    }else if (totalScore > 20){
+    }else if (totalScore > 16){
         $text.text("You are green lantern! You're meant to defend the universe with your power!");
         $image.attr("src", 'https://www.dccomics.com/sites/default/files/HJFLC_Cv1_R3_gallery_57fc3635f2c6a2.45566872.jpg');
-    }else if (totalScore > 10){
+    }else if (totalScore > 8){
         $text.text("You are batman! You show your own justice at your own way!");
         $image.attr("src", 'https://www.sideshowtoy.com/wp-content/uploads/2018/08/dc-comics-batman-statue-sideshow-prime1-studio-feature-2005181-2.jpg');
     }else if (totalScore > 0){
@@ -117,7 +117,9 @@ function result8(input){
     if (input.length > 0){
         input.split("");
         for (let i = 0; i < input.length; i ++){
-            value += input[i].charCodeAt() % 11;
+            if (input[i].charCodeAt % 2 === 0){
+                value += input[i].charCodeAt() % 11;
+            }
         }
     }
     return value % 6;
@@ -125,13 +127,17 @@ function result8(input){
 
 function result9(input){
     let value = 0;
+    let reg = /(?!\w)\s(?=\w)/g;
+    let store = 0;
     if (input.length > 0){
+        let r1 = input.match(reg);
+        if (r1 !== null){
+            store = r1.length;
+        }
         input.split("");
         if (input.length > 5)
         for (let i = 0; i < input.length; i ++){
-            if (input[i].charCodeAt % 2 === 0){
-                value += input[i].charCodeAt() % 17;
-            }
+            value += input[i].charCodeAt() % 17;
         }
     }
     return value % 6;

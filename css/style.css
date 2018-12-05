@@ -1,13 +1,12 @@
 .header {
     display: flex;
-    justify-content: space-between;
-    color: #0f65ef;
+    flex-wrap:wrap;
     font-weight: bold;
-    font-size:15px;
+    font-size:40px;
 }
 
 .logo {
-    width: 125px;
+    zoom: 25%;
 }
 
 body {
@@ -15,8 +14,12 @@ body {
 }
 
 .siliconValley {
-    width: 50%;
-    height:50%;
+    width: 25%;
+    height:25%;
+}
+
+#title{
+    width:auto;
 }
 
 #caption {
@@ -26,6 +29,7 @@ body {
 #tomImg {
     border-radius: 50%;
     width: 50px;
+    height:auto;
 }
 
 a {
